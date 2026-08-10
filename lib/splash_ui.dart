@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:home_care/onbording_ui/onbording_1.dart';
+import 'package:home_care/feature/onbording_ui/onbording_1.dart';
 
 class SplashUi extends StatefulWidget {
   const SplashUi({super.key});

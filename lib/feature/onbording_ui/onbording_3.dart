@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:home_care/core/app_colors.dart';
-import 'package:home_care/login_ui/ui/login.dart';
+import 'package:home_care/feature/auth/auth_wrapper.dart';
+import 'package:home_care/feature/auth/login_ui/login.dart';
 
 class Onbording3 extends StatelessWidget {
   const Onbording3({super.key});
@@ -28,7 +29,7 @@ class Onbording3 extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Login(),
+                            builder: (context) => const AuthWrapper(),
                           ),
                         );
                       },
@@ -56,7 +57,7 @@ class Onbording3 extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Onbording3()),
+                    MaterialPageRoute(builder: (context) => const Login()),
                   );
                 },
                 child: Container(
