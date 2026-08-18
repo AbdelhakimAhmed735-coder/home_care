@@ -1,10 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:home_care/feature/account_setup/presentation/screens/account_type_screen.dart';
 import 'package:home_care/feature/auth/login_ui/login_widgets.dart';
 import 'package:home_care/feature/auth/signup_ui/signup_controller.dart';
 import 'package:home_care/feature/auth/signup_ui/signup_validator.dart';
-import 'package:home_care/feature/provider_home_screen/presentation/home.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -62,6 +62,12 @@ class _SignupState extends State<Signup> {
     });
 
     if (error == null) {
+      await FirebaseAuth.instance.currentUser?.updateDisplayName(
+        nameController.text.trim(),
+      );
+
+      await FirebaseAuth.instance.currentUser?.reload();
+
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const AccountTypeScreen()),

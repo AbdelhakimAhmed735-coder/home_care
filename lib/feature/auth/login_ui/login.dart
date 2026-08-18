@@ -4,7 +4,7 @@ import 'package:gap/gap.dart';
 import 'package:home_care/feature/account_setup/presentation/screens/account_type_screen.dart';
 import 'package:home_care/feature/auth/signup_ui/screens/signup.dart';
 
-import 'package:home_care/feature/provider_home_screen/presentation/home.dart';
+import 'package:home_care/feature/home/provider_screen/presentation/provideer_home_screen.dart';
 
 import 'login_controller.dart';
 import 'login_widgets.dart';
