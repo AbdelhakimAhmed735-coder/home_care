@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-import 'package:home_care/feature/auth/signup_ui/signup.dart';
+import 'package:home_care/feature/account_setup/presentation/screens/account_type_screen.dart';
+import 'package:home_care/feature/auth/signup_ui/screens/signup.dart';
 
-import 'package:home_care/feature/home_ui/ui/home.dart';
+import 'package:home_care/feature/provider_home_screen/presentation/home.dart';
 
 import 'login_controller.dart';
 import 'login_widgets.dart';
@@ -54,7 +55,7 @@ class _LoginState extends State<Login> {
     if (error == null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const AccountTypeScreen()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(

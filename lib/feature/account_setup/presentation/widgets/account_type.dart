@@ -1,0 +1,1 @@
+enum AccountType { serviceProvider, lookingForService }

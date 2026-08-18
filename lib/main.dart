@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:home_care/feature/provider_setup/presentation/screens/provider_setup_screen.dart';
 import 'package:home_care/firebase_options.dart';
 import 'package:home_care/splash_ui.dart';
 

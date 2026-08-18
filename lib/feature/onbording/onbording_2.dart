@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:home_care/core/app_colors.dart';
 import 'package:home_care/feature/auth/auth_wrapper.dart';
-import 'package:home_care/feature/onbording_ui/onbording_2.dart';
+import 'package:home_care/feature/onbording/onbording_3.dart';
 
-class Onbording1 extends StatelessWidget {
-  const Onbording1({super.key});
+class Onbording2 extends StatelessWidget {
+  const Onbording2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Onbording1 extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                    Image.asset('assets/onbording/conter.png'),
+                    Image.asset('assets/onbording/counter2.png'),
                     Spacer(),
                     GestureDetector(
                       onTap: () {
@@ -41,15 +41,15 @@ class Onbording1 extends StatelessWidget {
                   ],
                 ),
               ),
-              Image.asset('assets/onbording/human services1.png'),
+              Image.asset('assets/onbording/humen sevices2.png'),
               Gap(30.h),
               Text(
-                "Welcome to fixit",
+                " Find Services",
                 style: TextStyle(fontSize: 30, color: Colors.white),
               ),
               Gap(40.h),
               Text(
-                "Discover a world of convenience and reliability. FixIt is your one stop solution for all your home service needs",
+                "Browse and book a wide range of services from plumbing and electrical to appliance repair. We've got it all covered",
                 style: TextStyle(fontSize: 17, color: Colors.white),
               ),
               Gap(50.h),
@@ -57,7 +57,7 @@ class Onbording1 extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Onbording2()),
+                    MaterialPageRoute(builder: (context) => const Onbording3()),
                   );
                 },
                 child: Container(
